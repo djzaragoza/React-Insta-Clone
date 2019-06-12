@@ -6,19 +6,23 @@ const dummyData = [
 
     imageUrl:
       "https://tk-assets.lambdaschool.com/69cf901b-f96d-466e-a745-ff2a01effac9_philz-image.jpg",
+    liked: true,  
     likes: 400,
     timestamp: "July 17th 2017, 12:42:40 pm",
     comments: [
       {
+        com_id: 1,
         username: "philzcoffee",
         text:
           "We've got more than just delicious coffees to offer at our shops!"
       },
       {
+        com_id: 2,
         username: "biancasaurus",
         text: "Looks delicious!"
       },
       {
+        com_id: 3,
         username: "martinseludo",
         text: "Can't wait to try it!"
       }
@@ -30,26 +34,32 @@ const dummyData = [
       "https://tk-assets.lambdaschool.com/ce601fdf-7cb0-4098-83d3-1a1584a72513_30841289_342445456281079_112845064497004544_n.jpg",
     imageUrl:
       "https://tk-assets.lambdaschool.com/89d13918-b7a2-4b40-9658-f376ea3f6b59_37131538_213683546146400_1083714364399157248_n.jpg",
+    liked: true,
     likes: 4307,
     timestamp: "July 15th 2017, 03:12:09 pm",
     comments: [
       {
+        com_id: 1,
         username: "twitch",
         text: "Epic Street Fighter action here in Las Vegas at #EVO2017!"
       },
       {
+        com_id: 2,
         username: "michaelmarzetta",
         text: "Omg that match was crazy"
       },
       {
+        com_id: 3,
         username: "themexican_leprechaun",
         text: "What a setup"
       },
       {
+        com_id: 4,
         username: "dennis_futbol",
         text: "It that injustice"
       },
       {
+        com_id: 5,
         username: "dennis_futbol",
         text: "Is"
       }
@@ -61,18 +71,22 @@ const dummyData = [
       "https://tk-assets.lambdaschool.com/c432f179-8bd7-4758-959d-d88a21f96bca_37105899_432228420518610_5035444036064772096_n.jpg",
     imageUrl:
       "https://tk-assets.lambdaschool.com/43bf01f9-319c-469d-8cf5-0120fe1007f1_yosemite.jpg",
+    liked: false,
     likes: 5306,
     timestamp: "July 14th 2017, 10:04:08 am",
     comments: [
       {
+        com_id: 1, 
         username: "playhearthstone",
         text: "Love this shot!"
       },
       {
+        com_id: 2,
         username: "awaywetravel",
         text: "Yosemite is my most favorite place in the universe"
       },
       {
+        com_id: 3,
         username: "awesomebt28",
         text: "I like how Half Dome looks so old and useless"
       }
