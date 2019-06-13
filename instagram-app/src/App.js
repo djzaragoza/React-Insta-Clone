@@ -67,9 +67,53 @@ triggerlikes = (e, username) => {
     console.log(this.state.local_user)
   }
 
+  //function to save the state of the post message
+  postchange = (e) => {
+    this.setState({
+      post_comment: e.target.value
+    })
+  }
 
+  //this is to save the post comment, and username
+  savepost = (e, username) => {
+    e.preventDefault()
+    const currentuser = this.state.local_user;
+    const comment = this.state.post_comment;
+    const mydate = Date.now();
+      this.setState(prevState => {
+        const myupdatepost = prevState.mydata.map(updatepost => {
+          if (updatepost.username === username) {
+            updatepost.comments.push({'com_id':mydate, 'username':currentuser, 'text':comment})
+            console.log(mydata, currentuser, comment)
+          }
+          this.setState({
+            post_comment: ""
+          })
 
+          return updatepost
+        })
+        return {
+          mydata : myupdatepost
+        }
+  })
+}
 
+render() {
+  return(
+    <div className="app_css">
+    <div className="form-popup" id="myForm">
+      <form onSubmit={(e) => this.Submit(e)} className="form-container">
+        <h2>Enter User Name first</h2>
+        <h3>Click on "Post" after submit</h3>
+        <input onChange={this.textchange} style={{width: '90%'}} className="usernameinput" type="text" placeholder="Enter user name" name="username"></input>
+        <button onClick={this.submit} type="submit" className="btn">Submit</button>
+        <button type="button" className="btn cancel" onClick={this.closeForm}>Close</button>
+      </form>
+    </div>
+
+    </div>
+  )
+}
 
 
 
