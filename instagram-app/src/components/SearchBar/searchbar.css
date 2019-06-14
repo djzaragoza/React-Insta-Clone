@@ -49,5 +49,68 @@
     margin: 2%;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
+.vertical_div {
+    display: inline-block;
+    vertical-align: middle;
+    height: 60%;
+    margin: auto 2%;
+    width: .5px;
+    border-right: 1px solid black;
+}
+
+.logotext {
+    width: 120px;
+    align-self: center;
+    margin-left: 2%;
+}
+
+/* right div */
+
+.account_logo {
+    display: flex;
+    width: 33.33%;
+    justify-content: flex-start;
+}
+
+.explore_class {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+@media(max-width: 700px) {
+    .search_bar_container {
+        width: 100%;
+    }
+    .search_input_div {
+        display: none;
+    }
+    .logos {
+        width: 49%;
+        justify-content: flex-start;
+    }
+    .account_logos {
+        width: 49%;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 500px) {
+    .logos {
+        width: 48%;
+        margin-left: 3%;
+    }
+
+    .account_logos {
+        width: 48%;
+        justify-content: flex-end;
+        margin-right: 3%;
+    }
+}
+
+
 
 
