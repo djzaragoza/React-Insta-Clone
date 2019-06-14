@@ -1,0 +1,17 @@
+.user_class {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 63px;
+    background-color: #FFFFFF;
+    border-bottom: .5px solid rgb(197, 193, 193);
+}
+
+.user_image {
+    align-content: flex-start;
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
