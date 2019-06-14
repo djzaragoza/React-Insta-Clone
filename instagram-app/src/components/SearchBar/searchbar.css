@@ -17,3 +17,37 @@
     height: 76px;
 }
 
+.search_input_div {
+    width: 33.33%;
+    align-self: center;
+}
+
+.search {
+    font-family: "fontAwesome";
+    background-color: rgba(233, 229, 229, .5);
+    height: 28px;
+    width: 215px;
+    border-radius: 4px;
+    margin: 1% 0%;
+    border: 1px solid rgb(211, 208, 208);
+}
+
+.search::placeholder {
+    text-align: center;
+}
+
+/* left div for logos */
+.logos {
+    display: flex;
+    width: 33.33%;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 45px;
+    align-self: center;
+    margin: 2%;
+}
+
+
+
