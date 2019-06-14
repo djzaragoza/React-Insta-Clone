@@ -111,14 +111,14 @@ render() {
       </form>
     </div>
 
-    </div>
-  )
+    <BarSearch />
+      {this.state.mydata.map((postmap,i) => {
+        <PostCont mydata = {postmap} key={postmap.username} postaction={this.postaction} postchange={this.postchange} triggerlikes = {this.triggerlikes} post_comment={this.state.post_comment}/>
+      ))}
+      </div>
+    );
+  }
 }
 
-
-
-
-
-}
 
 export default App;
