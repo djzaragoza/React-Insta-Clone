@@ -8,8 +8,11 @@ const Mylogin = (props) => {
                 <h1>Login</h1>
                 <label for="username"><b>Enter your User Name</b></label>
                 <input type="text" placeholder="Enter user name" name="username"></input>
-                
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" className="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     )
 }
+
+export default Mylogin;
