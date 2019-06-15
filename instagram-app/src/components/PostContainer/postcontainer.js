@@ -15,7 +15,7 @@ const PostCont = (props) => {
                 <Postcontent mydata = {props.mydata} triggerlikes={props.triggerlikes}/>
                 <Useraction triggerlikes={props.triggerlikes} mydata={props.mydata}/>
                 <Likes likes_var = {props.mydata}/>
-                    {props.mydata.comments.map({comments_map, j} => (
+                    {props.mydata.comments.map((comments_map, j) => (
                         <Messagesection message = {comments_map} key={comments_map.com_id} />
                     ))}
                 <Post postaction={props.postaction} postchange={props.postchange} mydata={props.mydata} post_comment={props.post_comment}/>

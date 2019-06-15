@@ -98,9 +98,19 @@ class App extends React.Component {
         <form onSubmit={(e) =>this.submit(e)} className="form-container">
           <h2>Enter User Name first</h2>
           <h3>Click on "Post" after submit</h3>
+          <input onChange={this.textchange} style={{width: '90%'}} className="usernameinput" type="text" placeholder="Enter user name" name="username"></input>
+          <button onClick={this.submit} type="submit" className="btn">Submit</button>
+          <button type="button" className="btn cancel" onClick={this.closeForm}>Close</button>
         </form>
       </div>
+
+      <BarSearch />
+        {this.state.mydata.map((postmap, i) => (
+          <PostCont mydata = {postmap} key={postmap.username} postaction={this.postaction} postchange={this.postchange} triggerlikes={this.triggerlikes} post_comment={this.state.post_comment}/>
+        ))}
       </div>
-    )
+    );
   }
 }
+
+export default App;
