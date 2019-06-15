@@ -1,0 +1,42 @@
+.post_class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 43px;
+    background-color: #FFFFFF;
+    border-top: .5px solid rgb(197, 193, 193);
+    margin-top: 1%;
+    padding: .5%;
+}
+
+.post_input {
+    border: none;
+    font-size: 14px;
+    width: 80%;
+    height: 14px;
+}
+
+.post_button {
+    width: 15%;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    color: rgba(0, 0, 255, 0, 39);
+    font-weight: 600;
+}
+
+.post_button:hover {
+    cursor: pointer;
+}
+
+.post_input:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.post_button:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
