@@ -1,7 +1,7 @@
 import React from 'react';
 import './useraction.css';
 import message_logo from './comment-icon.png';
-import like_heart_clear from './Instagram-heart.png';
+import like_heart_clear from './Instagram-Heart.png';
 import like_heart_red from './Instagram-Heart-liked.png';
 import share from './share.png';
 
