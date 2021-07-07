@@ -1,0 +1,116 @@
+.my_bar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-bottom: .5px solid rgb(197, 193, 193);
+}
+
+/*center div for search*/
+.search_bar_container {
+    display: flex;
+    align-content: center;
+    width: 80%;
+    height: 76px;
+}
+
+.search_input_div {
+    width: 33.33%;
+    align-self: center;
+}
+
+.search {
+    font-family: "fontAwesome";
+    background-color: rgba(233, 229, 229, .5);
+    height: 28px;
+    width: 215px;
+    border-radius: 4px;
+    margin: 1% 0%;
+    border: 1px solid rgb(211, 208, 208);
+}
+
+.search::placeholder {
+    text-align: center;
+}
+
+/* left div for logos */
+.logos {
+    display: flex;
+    width: 33.33%;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 45px;
+    align-self: center;
+    margin: 2%;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.vertical_div {
+    display: inline-block;
+    vertical-align: middle;
+    height: 60%;
+    margin: auto 2%;
+    width: .5px;
+    border-right: 1px solid black;
+}
+
+.logotext {
+    width: 120px;
+    align-self: center;
+    margin-left: 2%;
+}
+
+/* right div */
+
+.account_logo {
+    display: flex;
+    width: 33.33%;
+    justify-content: flex-start;
+}
+
+.explore_class {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+@media(max-width: 700px) {
+    .search_bar_container {
+        width: 100%;
+    }
+    .search_input_div {
+        display: none;
+    }
+    .logos {
+        width: 49%;
+        justify-content: flex-start;
+    }
+    .account_logos {
+        width: 49%;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 500px) {
+    .logos {
+        width: 48%;
+        margin-left: 3%;
+    }
+
+    .account_logos {
+        width: 48%;
+        justify-content: flex-end;
+        margin-right: 3%;
+    }
+}
+
+
+
+

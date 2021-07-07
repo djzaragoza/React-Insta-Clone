@@ -1,0 +1,19 @@
+.messagesection_class {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-top: 2px;
+}
+
+.user_name_class {
+    width: 100%;
+    margin: 0px 4px 0 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user_message {
+    font-weight: 200;
+    font-size: 14px;
+}

@@ -1,0 +1,22 @@
+.postcontent_class {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+    border: .5px solid rgb(247, 243, 243);
+    border-bottom: 0px;
+}
+
+.content_image {
+    max-width: 100%;
+    max-height: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+
+
